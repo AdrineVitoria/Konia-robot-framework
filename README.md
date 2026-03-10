@@ -5,9 +5,9 @@
     Tecnologias utilizadas
 
     * Python (https://www.python.org/)
-    * Robot Framework
-    * Selenium Library
-    * VS Code
+    * Robot Framework (https://robotframework.org/)
+    * Selenium Library (https://robotframework.org/SeleniumLibrary/)
+    * VS Code (https://code.visualstudio.com/)
 
     ## Como rodar os testes
 
