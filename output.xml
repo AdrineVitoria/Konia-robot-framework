@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-10T15:43:19.217187" rpa="false" schemaversion="5">
+<suite id="s1" name="Konia Testes" source="C:\Users\adrin\Downloads\Automação de Testes com Robot Framework\konia_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Quem Somos&quot;" line="7">
+<kw name="Abrir o navegador" owner="konia_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:19.433622" level="INFO">Opening browser 'Chrome' to base url 'https://www.konia.com.br/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-10T15:43:19.433396" elapsed="9.726248"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-10T15:43:29.160107" elapsed="0.100643"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:19.432816" elapsed="9.828231"/>
+</kw>
+<kw name="Dado que o usuário esteja na página home page da Konia.com.br" owner="konia_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:29.264767" level="INFO">Opening url 'https://www.konia.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-10T15:43:29.263703" elapsed="1.083828"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:29.262077" elapsed="1.086203"/>
+</kw>
+<kw name="Quando ele clicar no menu &quot;Quem Somos&quot;" owner="konia_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:30.351933" level="INFO">Clicking element 'xpath=//*[@id="menu-item-21864"]/a[contains(.,'Quem somos')]'.</msg>
+<arg>locator=${MENU_QUEM_SOMOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-10T15:43:30.350711" elapsed="2.987059"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:30.349372" elapsed="2.988706"/>
+</kw>
+<kw name="Então o título da página deverá ser &quot;Quem Somos &quot;" owner="konia_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${TITULO_QUEM_SOMOS}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-10T15:43:33.339535" elapsed="0.040202"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:33.338800" elapsed="0.041393"/>
+</kw>
+<kw name="Fechar o navegador" owner="konia_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:33.567555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-10T15:43:33.381929" elapsed="0.185833"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-10T15:43:33.568170" elapsed="2.394303"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:33.381406" elapsed="2.581290"/>
+</kw>
+<tag>menus</tag>
+<status status="PASS" start="2026-03-10T15:43:19.431961" elapsed="16.531164"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Pesquisa sobre o artigo JMeter" line="13">
+<kw name="Abrir o navegador" owner="konia_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:35.966452" level="INFO">Opening browser 'Chrome' to base url 'https://www.konia.com.br/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-10T15:43:35.966235" elapsed="8.910442"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-10T15:43:44.877323" elapsed="0.135109"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:35.965915" elapsed="9.046874"/>
+</kw>
+<kw name="Dado que o usuário esteja na página home page da Konia.com.br" owner="konia_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:45.023722" level="INFO">Opening url 'https://www.konia.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-10T15:43:45.022376" elapsed="1.083790"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:45.020432" elapsed="1.086073"/>
+</kw>
+<kw name="Quando ele clicar no menu &quot; Blog&quot;" owner="konia_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:46.108403" level="INFO">Clicking element 'xpath=//*[@id="menu-item-21871"]/a'.</msg>
+<arg>locator=${MENU_BLOG}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-10T15:43:46.107876" elapsed="3.065945"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:46.107286" elapsed="3.066674"/>
+</kw>
+<kw name="E pesquisar por &quot;JMeter&quot; no campo de busca" owner="konia_resources" source_name="E pesquisar por &quot;${PESQUISA}&quot; no campo de busca">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:49.175755" level="INFO">Typing text 'JMeter' into text field '//*[@id="search-1"]/form/label/input'.</msg>
+<arg>locator=${CAMPO_PESQUISA_BLOG}</arg>
+<arg>text=${PESQUISA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-10T15:43:49.175254" elapsed="0.277547"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-10T15:43:59.456225" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-10T15:43:49.453508" elapsed="10.002874"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:43:59.456924" level="INFO">Clicking element '//*[@id="search-1"]/form/input'.</msg>
+<arg>locator=${BOTAO_PESQUISA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-10T15:43:59.456601" elapsed="0.104336"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:49.174682" elapsed="10.386441"/>
+</kw>
+<kw name="Então deverá ser exibido na tela artigos referente ao tema buscado" owner="konia_resources">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>locator=${VALIDAÇÃO_ARTIGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-10T15:43:59.561905" elapsed="2.665365"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:43:59.561585" elapsed="2.665957"/>
+</kw>
+<kw name="Fechar o navegador" owner="konia_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-10T15:44:02.387252" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-10T15:44:02.228763" elapsed="0.158622"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-10T15:44:02.387607" elapsed="2.416122"/>
+</kw>
+<status status="PASS" start="2026-03-10T15:44:02.228403" elapsed="2.575553"/>
+</kw>
+<tag>busca_artigos</tag>
+<status status="PASS" start="2026-03-10T15:43:35.964801" elapsed="28.839639"/>
+</test>
+<status status="PASS" start="2026-03-10T15:43:19.218791" elapsed="45.587289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">busca_artigos</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+</tag>
+<suite>
+<stat name="Konia Testes" id="s1" pass="2" fail="0" skip="0">Konia Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
